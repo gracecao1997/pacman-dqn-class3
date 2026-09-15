@@ -35,6 +35,8 @@ No evaluation game hit the fixed time limit, either before or after training. Th
 
 ## Training evidence
 
+All evidence below comes from the same completed notebook run recorded in [`config.json`](results/config.json) and [`training_summary.json`](results/training_summary.json). The gameplay GIFs are **actual captures from the Atari environment**, not mockups, drawings, or recreated walkthrough states. The dashboard was generated directly from the 50 rows in [`training.csv`](results/training.csv), and the score table is reproduced from [`comparison.json`](results/comparison.json).
+
 ![Training dashboard](results/training_dashboard.png)
 
 ### Before training
@@ -53,7 +55,17 @@ No evaluation game hit the fixed time limit, either before or after training. Th
 
 ![Best trained gameplay](results/best_trained.gif)
 
-The GIFs show at most the first 20 seconds of their games at accelerated playback. Scores in the table cover the complete evaluation games, so the GIFs are illustrations rather than standalone performance evidence.
+The GIFs are real gameplay recordings, but they show at most the first 20 seconds of each game at accelerated playback. The scores in the table cover the complete evaluation games; use the recordings together with the full-game JSON scores when judging performance.
+
+### Evidence completeness
+
+- Actual untrained gameplay capture: [`untrained.gif`](results/untrained.gif)
+- Actual intermediate gameplay and checkpoint after episode 25: [`episode_0025.gif`](results/episode_0025.gif), [`episode_0025.pt`](results/episode_0025.pt)
+- Actual intermediate gameplay and checkpoint after episode 50: [`episode_0050.gif`](results/episode_0050.gif), [`episode_0050.pt`](results/episode_0050.pt)
+- Best actual gameplay capture from the five final evaluation games: [`best_trained.gif`](results/best_trained.gif)
+- Full five-game before/after results: [`comparison.json`](results/comparison.json)
+- Complete training history and generated dashboard: [`training.csv`](results/training.csv), [`training_dashboard.png`](results/training_dashboard.png)
+- Final executed notebook with visible cell outputs: [`pacman_dqn.ipynb`](pacman_dqn.ipynb)
 
 ## What the agent learns from
 
