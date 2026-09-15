@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "completed_episodes": 50,
+  "total_decisions": 29794,
+  "learning_updates": 7199,
+  "elapsed_seconds_including_periodic_demos": 128.4793222080043
+}
